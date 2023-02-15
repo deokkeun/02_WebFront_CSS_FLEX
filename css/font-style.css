@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito+Sans&display=swap');
+
+
+
+#size-test > li:nth-child(1) {font-size: 24px}
+#size-test > li:nth-child(2) {font-size: 18pt}
+#size-test > li:nth-child(3) {font-size: 150%}
+#size-test > li:nth-child(4) {font-size: 1.5em}
+
+/* 크롬브라우저 기준
+    기본 글꼴 크기 : 16px
+ */
+
+ /* font-weight */
+ #weight-test > li {
+    font-size: 34px;
+ }
+
+ #weight-test > li:nth-child(1) {font-weight: 600;}
+ #weight-test > li:nth-child(2) {font-weight: bold;}
+ #weight-test > li:nth-child(3) {font-weight: bolder;}
+ #weight-test > li:nth-child(4) {font-weight: lighter;}
+ #weight-test > li:nth-child(5) {
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* font-family */
+.cls > li {
+    font-size: 24px;
+}
+
+#family-test1 > li:nth-child(1) {
+    font-family: '궁서'; /* 설치된 폰트인 경우 */
+}
+
+#family-test1 > li:nth-child(2) {
+    font-family: '배달의민족체';
+    /* 없는 폰트인 경우 기본폰트로 설정 */
+}
+
+#family-test1 > li:nth-child(3) {
+    font-family: '배달의민족체', '굴림체'; 
+}
+
+/* 웹폰트 */
+
+/* 1. (html)link 태그를 이용한 방법 */
+#family-test2 > li:nth-child(1) {
+    font-family: 'single Day', cursive;
+}
+
+/* 2. import는 css 파일 제일 상단에 작성 */
+#family-test2 > li:nth-child(2) {
+    font-family: 'Inter', sans-serif;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* 3. @font-face 이용 */
+#family-test2 > li:nth-child(3) {
+    font-family: 'Pretendard-Regular', cursive;
+}
+
+/* 4. 글꼴 전체 적용
+* {
+    font-family: 'Pretendard-Regular', cursive; 
+} */
