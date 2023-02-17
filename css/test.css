@@ -1,5 +1,79 @@
-.ss {
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    border: 1px solid black;
+}
+
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 1000px;
+}
+
+.container div:first-child {
+    flex-basis: 20%;
+}
+.container div:last-child {
+    flex-basis: 80%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.right div:nth-child(1),
+.right div:nth-child(2) {
+    flex-basis: 10%;
+}
+
+.right div:nth-child(3) {
+    flex-basis: 80%;
+}
+
+.content {
+    display: flex;
+
+    background-color: orange;
+}
+.content > div:first-child, 
+.content > div:last-child {
+    flex-basis: 50%;
+}
+
+.blueGreenBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.blueGreenBox div:first-child {
+    flex-basis: 40%;
+    background-color: blue;
+    margin
+}
+.blueGreenBox div:last-child {
+    flex-basis: 60%;
+    background-color: green;
+}
+
+.redBox {
+    background-color: red;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.redBox div:nth-child(1),
+.redBox div:nth-child(2),
+.redBox div:nth-child(3),
+.redBox div:nth-child(4) {
+    flex-basis: 50%;
+    background-color: yellow;
+    scale: 0.8;
 }

@@ -1,0 +1,70 @@
+.header {
+    height: 72px;
+    background-color: #24292f;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.head1 > div:first-child {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.head1 {
+    display: flex;
+    width: 1200px;
+    border: 1px solid black;
+    align-items: center;
+}
+.head2 {
+    width: 1150px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head2 > div:nth-child(2) {
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+}
+
+.head2 a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+#s-box {
+    position: relative;
+}
+
+#search-input {
+    width: 230px;
+    height: 35px;
+    background-color: #24292f;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+#search-btn {
+    position: absolute;
+    right: 5px;
+    top: 1px;
+    bottom: 1px;
+    background-color: #24292f;
+    border: none;
+    color: white;
+}
+
+.signup {
+    height: 35px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #24292f;
+    color: white;
+
+}
